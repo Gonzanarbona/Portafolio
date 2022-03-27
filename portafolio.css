@@ -1,0 +1,804 @@
+html{
+    scroll-behavior: smooth;
+}
+.encabezado{
+    width: 100%;
+    top: 0;
+    background-color: #FFFFFF;
+}
+.container-header{
+    width: 80%;
+    max-width: 1920px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    margin: 0 10% ;
+    padding: 1rem;
+}
+.nombre-header{
+    display: flex;
+    align-items: center;   
+}
+.elementos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static; 
+    gap: 1rem;
+}
+.estrella{
+    display: inline;
+    font-family: fantasy; 
+}
+.nombre{
+    display: inline;
+    color: black;
+    font-family: fantasy;
+    width: max-content;   
+}
+.a:-webkit-any-link {
+    cursor: pointer;
+}   
+.link{
+    font-family: fantasy;
+    color: black;
+    text-decoration: none;
+}
+.link:hover{
+    color:#c78c19;
+    text-decoration: underline;
+    font-size: 150%;
+}
+.conteiner-whatsapp{
+    background-color: #2e6329;
+    border: 1px solid #ffffff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    padding: 1vw;
+    transform: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+.conteiner-whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.boton-whatsapp, .boton-whatsapp img{
+    width: 3vw;
+    transition: ease 1s;
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.85)
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgb(0, 0, 0, 0);
+    }
+}
+main{
+    background: linear-gradient(#FFFFFF,#888888);
+}
+.conteiner-main{
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse; 
+}
+.conteiner-presentacion{
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem 10% 0 10%;
+    border-radius: 0px;
+    display: flex;
+}
+.presentacion-descripcion{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.presentacion-descripcion h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0em;
+    text-align: left;
+    vertical-align: top;
+    color:#464646;
+}
+
+.presentacion-perfil{   
+    font-family: Raleway;
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.redes-sociales{
+    border-radius: 0px;
+    display: flex;
+    gap: 3rem;
+}
+
+.redes{
+    width: auto;
+    height: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.redes:hover{
+    font-size: 20px;
+}
+
+.foto-perfil{
+    height: 292px;
+    margin-left: 170px;
+    max-width: 100%;
+}
+
+.container-sobre-mi{
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+    
+
+
+}
+.sobre-mi{
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem 10% 0 10%;
+    justify-content: space-between;
+    display: block;
+}
+
+
+.subtitulo-sobre-mi{
+    display: block;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #464646;
+
+}
+
+.biografia{
+    display: block;
+    height:auto;
+    margin-top: 0.5rem;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#464646;
+    
+}
+
+.container-skills, .container-hobbies, .container-formación, .container-contacto{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+ 
+}
+
+.subtitulo{
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 2rem;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: #464646;
+    
+}
+
+.imagen, .conjunto-contacto{
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem 10% 0 10%;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+.cuadrado{
+    flex-basis: 20%;
+    color: #2a7ae4;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 8rem;
+    background: linear-gradient(#c9c7c7,#888888);
+    
+}
+    
+.cuadrado-descripcion{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+
+}
+
+.fa-html5, .fa-js-square, .fa-css3-alt, .fa-golf-ball-tee, .fa-futbol, .fa-tv, .fa-burger{
+    font-size: 5rem;
+}
+.imagen-formación{
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem 10% 0 10%;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;  
+}
+
+.cuadrado-formación{
+    flex-basis: 20%;
+}
+.logo{
+    width: 5rem;
+}
+.descripcion-formación, .titulo-proyectos{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.fecha, .descripcion-proyectos{
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.conjunto-imagen-proyecyo-botones{
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem 10% 0 10%;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-proyectos{
+    display: flex;
+    align-items: center;
+}
+
+.imagen-proyectos img{
+    width: 70%;
+    padding: 1rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.boton-repositorio{
+    cursor: pointer;
+    border: solid #2a7ae4 0.15rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2a7ae4;
+
+}
+
+.boton-ver{
+    cursor: pointer;
+    border: solid #2a7ae4 0.15rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #2a7ae4;
+  
+
+}
+
+.subtitulo-contacto{
+    width: 80%;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: #464646;
+    margin: 0 1rem 1rem 1rem;
+    
+}
+.preguntas{
+    margin: 0.5rem 1rem;
+}
+
+.datos-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: white;
+}
+label{
+    font-size: 0.7rem;
+    padding: 0.3rem;
+}
+
+.input-form{
+    display: block;
+    height: 2rem;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 0.2rem black;
+    font-family: Raleway sans-serif;
+    color: black;
+    text-align: left;
+   
+}
+.mensaje-form{
+    display: block;
+    height: 8rem;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 0.2rem black;
+    font-family: Raleway sans-serif;
+    color: black;
+    text-align: left;
+}
+.formulario__input-error{
+    font-size: 0.7rem;
+    color: #bb2929;
+    margin-top: 0.3rem;   
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+textarea:invalid{
+    border: #bb2929;
+}
+.boton-enviar{
+    cursor: pointer;
+    border: solid #2a7ae4 0.15rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #2a7ae4;
+    margin-left: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    position: static;
+    width: 1440px;
+    height: 102px;
+    margin-left: 0px;  
+}
+
+.copyright{
+    font-family: fantasy;
+    color: black;
+    text-decoration: none;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto{
+	background-color: transparent;
+    color: #FFFFFF;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .datos-formulario label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto{
+	background-color: transparent;
+    color: #FFFFFF;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .input-form{
+	border: 3px solid #1ed12d;
+}
+
+.formulario__grupo-incorrecto .input-form{
+	border: 3px solid #bb2929;
+}
+.formulario__grupo-correcto .mensaje-form{
+	border: 3px solid #1ed12d;
+}
+
+.formulario__grupo-incorrecto .mensaje-form{
+	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width:450px){
+    .container-header{
+        width: 90%;
+        margin: 1rem;
+        padding: 1rem 0;
+        align-items: center;
+
+    }
+   .nombre{
+       font-size: 0;
+   }
+   .elementos{
+        font-size: 3vw;
+        gap: 3vw;
+   }
+
+   .redes-sociales{
+       display: inline-block;
+   }
+
+   .redes img{
+       width: 2vw;
+       height: 2vw;
+   }
+
+   .conteiner-presentacion, .conteiner-main, .sobre-mi, .subtitulo-skills, .imagen-skills, .subtitulo-hobbies, .imagen-hobbies, .container-formación, .imagen, .container-contacto{
+       margin: auto;
+       height: auto;
+   }
+   .presentacion-descripcion{
+       gap: 1rem;
+   }
+   .presentacion-descripcion h1, .subtitulo, .subtitulo-skills, .subtitulo-hobbies, .subtitulo-contacto{
+       font-size: 5vw;
+   }
+   .presentacion-descripcion p, nav, .biografia, .cuadrado-descripcion, .copyright, .descripcion-formación{
+    font-size: 3vw;
+   }
+   .redes, .fecha{
+       font-size: 2.5vw;
+       padding-right: 3vw;
+   }
+
+   .foto-perfil{
+       height:25vw;
+       margin-left: auto;
+   }
+   .cuadrado{
+       font-size: 15vw;
+   }
+   .fa-html5, .fa-css3-alt, .fa-js-square, .fa-golf-ball-tee, .fa-futbol, .fa-tv, .fa-burger{
+        font-size: 10vw;
+   }
+   .imagen-formación, .conjunto-imagen-proyecyo-botones{
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 10%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+   }
+   .cuadrado-formación{
+    width: auto;
+    display: flex;
+    align-items: center;
+   }
+   .logo{
+       width: 10vw;
+       padding-top: 0;
+   }
+   .titulo-formacion{
+       width: auto;
+   }
+   .botones{
+       flex-wrap: nowrap;
+       justify-content: center;
+   }
+   .boton-repositorio, .boton-ver{
+    font-size: 1rem;
+    padding: 0.5rem;
+    }
+   .imagen-proyectos, .imagen-proyectos img{
+    width: 100%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0;
+    }
+    .conjunto-contacto{
+        width: 80%;
+        padding: 1rem 0;
+        margin: 0 10%;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .imagen-contacto img, .formulario-contacto{
+        width: 100%;
+        height: 100%;
+        gap: 0.5rem; 
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+    }
+    .preguntas{
+        font-size: 2.5vw;
+        margin: 0 0 0.5rem 1rem;
+    }
+    .subtitulo-contacto, .datos-formulario{
+        margin: 0 0 0.5rem 1rem ;
+    }
+    label{
+        font-size: 1.5vw;
+        padding: 2px;
+    }
+    
+    .input-form{
+        display: block;
+        height: 9px;
+        font-size: 2vw;
+        font-style: normal;
+        padding: 1px;
+        border: none;
+        border-bottom: solid 0.2rem black;
+        font-family: Raleway sans-serif;
+        color: black;
+        text-align: left;
+    }
+    .mensaje-form{
+        display: block;
+        height: 36px;
+        font-size: 2vw;
+        font-style: normal;
+        padding: 2px;
+        border: none;
+        border-bottom: solid 0.2rem black;
+        font-family: Raleway sans-serif;
+        color: black;
+        text-align: left;
+    }
+    .formulario__input-error{
+        font-size: 1.5vw;
+        color: #bb2929;
+        margin-top: 0.5vw;   
+        display: none;
+    }
+    .formulario__input-error-activo{
+        display: block;
+    }
+    .boton-enviar{
+        cursor: pointer;
+        border: solid #2a7ae4 0.15rem;
+        font-size: 3vw;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: #2a7ae4;
+        margin-left: 1rem;
+    }
+    footer{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding: 1rem;
+     }
+     .copyright{
+         font-size: 2vw;
+         font-family: fantasy;
+         color: black;
+         text-decoration: none;
+     
+     }
+     
+}
+
+@media screen and (max-width:969px){
+    .container-header{
+        width: 90%;
+        margin: 1rem;
+        padding: 1rem 0;
+        align-items: center;
+
+    }
+   .nombre{
+       font-size: 0;
+   }
+   .elementos{
+        font-size: 3vw;
+        gap: 3vw;
+   }
+
+   .redes-sociales{
+       display: inline-block;
+   }
+
+   .redes img{
+    width: 2vw;
+    height: 2vw;
+   }
+
+   .conteiner-presentacion, .conteiner-main, .sobre-mi, .subtitulo-skills, .imagen-skills, .subtitulo-hobbies, .imagen-hobbies, .container-formación, .imagen, .container-contacto{
+       margin: auto;
+       height: auto;
+   }
+   .presentacion-descripcion{
+       gap: 1rem;
+   }
+   .presentacion-descripcion h1, .subtitulo, .subtitulo-skills, .subtitulo-hobbies, .subtitulo-contacto{
+       font-size: 5vw;
+   }
+   .presentacion-descripcion p, nav, .biografia, .cuadrado-descripcion, .copyright{
+    font-size: 3vw;
+   }
+   .redes{
+       font-size: 2.5vw;
+       padding-right: 3vw;
+   }
+
+   .foto-perfil{
+       height:25vw;
+       margin-left: auto;
+   }
+   .cuadrado{
+       font-size: 15vw;
+   }
+   .fa-html5, .fa-css3-alt, .fa-js-square, .fa-golf-ball-tee, .fa-futbol, .fa-tv, .fa-burger{
+        font-size: 10vw;
+   }
+   .imagen-formación, .conjunto-imagen-proyecyo-botones{
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 10%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   }
+   .cuadrado-formación{
+    width: auto;
+    display: flex;
+    align-items: center;
+   }
+   .logo{
+       width: 10vw;
+       padding-top: 0;
+    }
+    .botones{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .boton-repositorio, .boton-ver{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .imagen-proyectos, .imagen-proyectos img{
+        width: 100%;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        padding: 0;
+    }
+    .conjunto-contacto{
+        width: 80%;
+        padding: 1rem 0;
+        margin: 0 10%;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;  
+    }
+    .imagen-contacto img, .formulario-contacto{
+        width: 100%;
+        height: 100%;
+        gap: 0.5rem; 
+        padding: 0;
+        margin: 0.5rem 0 0 0 ;
+    }
+    .preguntas{
+        font-size: 2.5vw;
+        margin: 0 0 0.5rem 1rem;
+    }
+    .subtitulo-contacto, .datos-formulario{
+        margin: 0 0 0.5rem 1rem;
+    }
+    label{
+        font-size: 1.5vw;
+        padding: 2px;
+    }
+    .input-form{
+        display: block;
+        height: 9px;
+        font-size: 2vw;
+        font-style: normal;
+        padding: 1px;
+        border: none;
+        border-bottom: solid 0.2rem black;
+        font-family: Raleway sans-serif;
+        color: black;
+        text-align: left;
+    }
+    .mensaje-form{
+        display: block;
+        height: 36px;
+        font-size: 2vw;
+        font-style: normal;
+        padding: 2px;
+        border: none;
+        border-bottom: solid 0.2rem black;
+        font-family: Raleway sans-serif;
+        color: black;
+        text-align: left;
+    }
+    .formulario__input-error{
+        font-size: 1.5vw;
+        color: #bb2929;
+        margin-top: 0.5vw;   
+        display: none;
+    }
+    .formulario__input-error-activo{
+        display: block;
+    }
+    .boton-enviar{
+        cursor: pointer;
+        border: solid #2a7ae4 0.15rem;
+        font-size: 3vw;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        background: #2a7ae4;
+        margin-left: 1rem;
+    }
+    footer{
+       width: 90%;
+       height: auto;
+       margin: auto;
+       padding: 1rem;
+    }
+    .copyright{
+        font-size: 2vw;
+        font-family: fantasy;
+        color: black;
+        text-decoration: none;
+    
+    }
+
+}
